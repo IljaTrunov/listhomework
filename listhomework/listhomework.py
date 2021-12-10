@@ -26,24 +26,44 @@
 			#print("Это не буква.")
 	#print (slovo_list)
 
-#1
-print("Функция .split")
-stroka = "Я будущий программист"
-listik = stroka.split()
-print(listik)
-print()
-#2
-print("Функция .join")
-listik1 = ["Я", "будущий", "программист"]
-probel = " "
-slova = probel.join(listik1)
-print(slova)
-print()
-#3
-print("Функция .istitle")
-listik2 = ["я", "Будущий", "программисТ"]
-slova2 = slova2.istitle(listik2)
-print(slova2)
-print()
-
-
+listik=" "
+slovo=str(input("Введи слово: "))
+slovo1=list(slovo) # делает список
+print(slovo,slovo1)
+while True:
+	listik = int(input("Напиши цифру от 1 до 10 и тебе дадут список"))
+	if listik == 1:
+		print("В списке",len(slovo1), "символов") #считает длину строки
+	elif listik == 2:
+		if slovo.isalnum()==True: # Состоит ли строка из цифр или букв
+			print("Есть символы")
+	elif listik == 3:
+		if slovo.swapcase()==True: # Переводит символы нижнего регистра в верхний, а верхнего – в нижний
+			print(slovo)
+			print()
+	elif listik == 4:
+		if slovo.isspace()==True: # Состоит ли строка из неотображаемых символов
+			print("Есть пробел")
+		else:
+			print("Нет пробела")
+	elif listik == 5:
+		if slovo.isalpha()==True: # Состоит ли строка из букв
+			print("В строке есть буква")
+		else:
+			print("Букв нет")
+	elif listik == 6:
+		print(slovo.capitalize()) # Переводит первый символ строки в верхний регистр, а все остальные в нижний
+	elif listik == 7:
+		print(slovo.lower()) # Преобразование строки к нижнему регистру
+	elif listik == 8:
+		print(slovo.upper()) # Преобразование строки к верхнему регистру
+	elif listik == 9:
+		if slovo.istitle()==True: # Начинаются ли слова в строке с заглавной буквы
+			print("Есть заглавная буква")
+		else:
+			print("Нету заглавной буквы")
+	elif listik == 10:
+		if slovo.title(): # Первую букву каждого слова переводит в верхний регистр, а все остальные в нижний
+			print(slovo.title)
+	else:
+		print("Неверное значение")
