@@ -36,7 +36,7 @@ while True:
 		print("В списке",len(slovo1), "символов")#считает длину строки
 	elif listik == 2:
 		if slovo.isalnum()==True: # Состоит ли строка из цифр или букв
-			print("Есть символы"
+			print("Есть символы", slovo)
 	elif listik == 3:
 		if slovo.swapcase()==True: # Переводит символы нижнего регистра в верхний, а верхнего – в нижний
 			print(slovo)
@@ -47,7 +47,7 @@ while True:
 			print("Нет пробела")
 	elif listik == 5:
 		if slovo.isalpha()==True: # Состоит ли строка из букв
-			print("В строке есть буква")
+			print("Строка состоит из букв")
 		else:
 			print("Букв нет")
 	elif listik == 6:
@@ -63,6 +63,7 @@ while True:
 			print("Нету заглавной буквы")
 	elif listik == 10:
 		if slovo.title(): # Первую букву каждого слова переводит в верхний регистр, а все остальные в нижний
-			print(slovo.title)	
+			print("Готово")
+			print(slovo)	
 	else:
 		print("Неверное значение")
