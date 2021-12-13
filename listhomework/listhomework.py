@@ -27,7 +27,7 @@
 	#print (slovo_list)
 
 listik=" "
-slovo=str(input("Введи слово: "))
+slovo=("Крутой Агапчик"))
 slovo1=list(slovo) # делает список
 print(slovo,slovo1)
 while True:
@@ -35,8 +35,7 @@ while True:
 	if listik == 1:
 		print("В списке",len(slovo1), "символов")#считает длину строки
 	elif listik == 2:
-		if slovo.isalnum()==True: # Состоит ли строка из цифр или букв
-			print("Есть символы", slovo)
+		print(slovo.replace("slovo","Agapchik is cool")) # Заменяет слова в значении "slova" на латинский
 	elif listik == 3:
 		if slovo.swapcase()==True: # Переводит символы нижнего регистра в верхний, а верхнего – в нижний
 			print(slovo)
@@ -62,8 +61,6 @@ while True:
 		else:
 			print("Нету заглавной буквы")
 	elif listik == 10:
-		if slovo.title(): # Первую букву каждого слова переводит в верхний регистр, а все остальные в нижний
-			print("Готово")
-			print(slovo)	
+		print(slovo.ljust(55,"-")) #Заполняет справа от слова заданый символ	
 	else:
 		print("Неверное значение")
